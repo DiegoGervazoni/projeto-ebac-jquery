@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 64rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header, footer {
+  background-color: #192a56;
+  padding-top: 1rem;
+  color: #fff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header > .container,
+footer .container{
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+nav {
+  background-color: #575fcf;
+  padding: 1rem 0;
+  display: none;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-hamburguer {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.menu-hamburguer span{
+  height: .125rem;
+  width: 100%;
+  display: block;
+  background-color: #fff;
+  margin-bottom: .25rem;
+}
+
+.container-flex {
+  display: flex;
+}
+
+#sobre-loja img {
+  max-width: 25rem;
+  margin-right: 1.5rem;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+.lista-veiculos {
+  flex-wrap: wrap;
+}
+
+.lista-veiculos li{
+  list-style: none;
+  max-width: 30%;
+  margin-bottom: 1.5rem;
+}
+
+.lista-veiculos li img {
+  max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+  margin: 1rem 0;
+}
+
+.item-central {
+  margin: 0 5%;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: .5rem 0;
+  background-color: #119759;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.price {
+  margin: 1rem 0;
+  display: block;
+}
+
+.price del {
+  color: #e6a6a6;
+  font-size: .875rem;
+}
+
+.form-campo {
+  margin-bottom: 1rem;
+
+}
+
+.form-campo label {
+  font-weight: bold;
+  display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+  width: 100%;
+  display: block;
+  padding: .5rem;
+}
+
+.form-campo textarea {
+  resize: none;
+  height: 7.5rem;
+}
+
+form {
+  max-width: 22.5rem;
+}
+
+form button {
+  max-width: 7.5rem;
+}
+
+footer li {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+footer li img {
+  height: 2rem;
+}
+
+.campoErrado {
+  color: rgb(189, 28, 28);
+}
