@@ -80,6 +80,7 @@
       </div>
     </section>
 
+    <!-- Em destaque -->
     <section>
       <div class="container">
         <h2>Em destaque</h2>
@@ -96,7 +97,7 @@
             <button type="button">Tenho interesse</button>
           </li>
           <li class="item-central">
-            <img src="./images/fusca.png" alt="Carro da BMW" />
+            <img src="./images/carro-bmw.png" alt="Carro da BMW" />
             <h3>Carro BMW</h3>
             <p>
               Cambio automático, 4 portas, 2 airbags, ar condicionado, direção
@@ -162,7 +163,7 @@
             <button type="button">Tenho interesse</button>
           </li>
           <li class="item-central">
-            <img src="./images/fusca.png" alt="Carro da BMW" />
+            <img src="./images/carro-bmw.png" alt="Carro da BMW" />
             <h3>Carro BMW</h3>
             <p>
               Cambio automático, 4 portas, 2 airbags, ar condicionado, direção
@@ -218,7 +219,7 @@
     </section>
 
     <!-- Contato -->
-    <section>
+    <section id="contato">
       <div class="container">
         <h2>Entre em contato</h2>
         <form>
@@ -236,11 +237,7 @@
           </div>
           <div class="form-campo">
             <label for="veiculo-interesse">Veículo de interesse</label>
-            <input
-              type="text"
-              id="veiculo-interesse"
-              name="veiculoInteresse"
-            />
+            <input type="text" id="veiculo-interesse" name="veiculoInteresse" />
           </div>
           <div class="form-campo">
             <label for="mensagem">Mensagem</label>
@@ -290,56 +287,6 @@
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/messages_pt_BR.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#carrosel-imagens").slick({
-          //seleciona o elemento que vai ser o carrosel
-          autoplay: true, //autoplay
-        });
-
-        $(".menu-hamburguer").click(function () {
-          //quando clicar no menu hamburguer
-          $("nav").slideToggle(); //abre e fecha o menu
-        });
-
-        $("#telefone").mask("(00) 00000-0000");
-
-        $("form").validate({
-          rules: {
-            nome: {
-              required: true,
-            },
-            email: {
-              required: true,
-              email: true,
-            },
-            telefone: {
-              required: true,
-            },
-            mensagem: {
-              required: true
-            },
-            veiculoInteresse: {
-              required: false
-            }
-          },
-          messages: {
-            nome: '<span class="campoErrado">Por favor, insira o seu nome.</span>',
-            email: '<span class="campoErrado">"Por favor, insira o seu email."</span>',
-            telefone: '<span class="campoErrado">"Por favor, insira o seu telefone."</span>',
-            mensagem: '<span class="campoErrado">"Por favor, insira a sua mensagem"</span>'
-          },
-          submiHandler: function (form) {
-            console.log(form);
-          },
-          invalidHandler: function (evento, validador) {
-            let camposIncorretos = validador.numberOfInvalids();
-            if (camposIncorretos) {
-              alert(`Existem ${camposIncorretos} campos incorretos`);
-            }
-          }
-        });
-      });
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
